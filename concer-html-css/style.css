@@ -1,0 +1,241 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: normal;
+  }
+  
+  p {
+    margin: 0 0 1em;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  /* Шапка */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin: 0 0 20px;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  /* Главный контент */
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    margin: 0 0 20px;
+  }
+  
+  .artist-list li {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    }
+    
+    .artist-list li img {
+    margin-right: 20px;
+    }
+    
+    .artist-info h3 {
+    margin: 0 0 10px;
+    }
+    
+    .artist-info p {
+    margin: 0;
+    }
+    
+    .button {
+        width: 6.5em;
+        height: 2.3em;
+        margin: 0.5em;
+        background: black;
+        color: white;
+        border: none;
+        border-radius: 0.625em;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+    }
+    
+    .button:hover {
+        color: rgb(137, 132, 132);
+    }
+    .button:after {
+        content: "";
+        background: white;
+        position: absolute;
+        z-index: -1;
+        left: -20%;
+        right: -20%;
+        top: 0;
+        bottom: 0;
+        transform: skewX(-45deg) scale(0, 1);
+        transition: all 0.5s;
+       }
+       
+       .button:hover:after {
+        transform: skewX(-45deg) scale(1, 1);
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+       }
+
+
+    .contact-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    }
+    
+    .contact-list li i {
+    margin-right: 10px;
+    }
+    
+    /* Футер */
+    footer {
+    background-color: #eee;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    }
+    
+    .footer-text {
+    margin: 0;
+    }
+    
+    .footer-link {
+    color: #333;
+    }
+    
+    .footer-link:hover {
+    text-decoration: underline;
+    }
+    /* Мобильный */
+@media only screen and (max-width: 360px) {
+    .main h1 {
+      font-size: 36px;
+    }
+    .main p {
+      font-size: 18px;
+    }
+    .artist-list li img {
+      max-width: 60px;
+    }
+    .artist-info h3 {
+      font-size: 20px;
+    }
+    .artist-info p {
+      font-size: 16px;
+    }
+    .button {
+      font-size: 16px;
+    }
+    .contact-list li {
+      font-size: 16px;
+    }
+    footer {
+      font-size: 16px;
+    }
+  }
+  /* Планшет */
+@media only screen and (min-width: 361px) and (max-width: 768px){
+    .main h1 {
+        font-size: 42px;
+      }
+      .main p {
+        font-size: 20px;
+      }
+      .artist-list li img {
+        max-width: 70px;
+      }
+      .artist-info h3 {
+        font-size: 22px;
+      }
+      .artist-info p {
+        font-size: 18px;
+      }
+      .button {
+        font-size: 18px;
+      }
+      .contact-list li {
+        font-size: 18px;
+      }
+      footer {
+        font-size: 18px;
+      }
+    }
+    /* Компьютер */
+@media only screen and (min-width: 769px) {
+    .main h1 {
+      font-size: 56px;
+    }
+    .main p {
+      font-size: 24px;
+    }
+    .artist-list li img {
+      max-width: 90px;
+    }
+    .artist-info h3 {
+      font-size: 28px;
+    }
+    .artist-info p {
+      font-size: 20px;
+    }
+    .button {
+      font-size: 20px;
+    }
+    .contact-list li {
+      font-size: 20px;
+    }
+    footer {
+      font-size: 20px;
+    }
+  }
+      
